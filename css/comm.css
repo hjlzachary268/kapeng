@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:微软雅黑;
+}
+iframe{
+  width:100%;
+}
+iframe.header{
+  position:fixed;
+  z-index: 1000;
+}
+iframe.footer{
+  height:330px;
+  display:block;
+}

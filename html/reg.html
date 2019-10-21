@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册会员</title>
+  <script type="text/javascript" src="reg.js"></script>
+  <link type="text/css" rel="stylesheet" href="reg.css">
+</head>
+<body>
+  <iframe class="head" src="head.html" frameborder="0" scrolling="no"></iframe>
+  <div class="floor"></div>
+  <div id="divUserReg">
+    <p>注册会员</p>
+    <!-- 用户名 -->
+    <div>
+      <label for="uname">用户名：</label>
+      <input class="inputsize" type="text" id="uname" onfocus="unameMsg()" onblur="checkUname()" placeholder="请输入用户名">
+      <span id="unameTips"></span><br>
+    </div>
+    <!-- 密码 -->
+    <div>
+      <label for="upwd">密码：</label>
+      <input class="inputsize" type="password" id="upwd" onfocus="upwdMsg()" onblur="checkUpwd()" placeholder="请输入用户密码">
+      <span id="upwdTips"></span><br>
+    </div>
+    <!-- 重复密码 -->
+    <div>
+      <label for="cpwd">重复密码：</label>
+      <input class="inputsize" type="password" id="cpwd" onfocus="cpwdMsg()" onblur="checkCpwd()" placeholder="请输入用户密码">
+      <span id="cpwdTips"></span><br>
+    </div>
+    <!-- 邮箱 -->
+    <div>
+      <label for="email">邮箱：</label>
+      <input class="inputsize" type="email" id="email" onfocus="emailMsg()" onblur="checkEmail()" placeholder="请输入电子邮箱">
+      <span id="emailTips"></span><br>
+    </div>
+    <!-- 手机号码 -->
+    <div>
+      <label for="phone">手机号码：</label>
+      <input class="inputsize" type="tel" id="phone" onfocus="phoneMsg()" onblur="checkPhone()" placeholder="请输入手机号码">
+      <span id="phoneTips"></span><br>
+    </div>
+    <!-- 真实姓名 -->
+    <div>
+      <label for="user_name">真实姓名：</label>
+      <input class="inputsize" type="text" id="user_name" onfocus="user_nameMsg()" onblur="checkUser_name()" placeholder="请输入姓名">
+      <span id="user_nameTips"></span><br>
+    </div>
+    <!-- 性别 -->
+    <div class="gender_div">
+      <label for="gender">性别：</label>
+      <input class="gender_input" type="radio" name="gender" id="man" checked>男
+      <input class="gender_input" type="radio" name="gender" id="woman">女<br>
+    </div>
+    <!-- 出生日期 -->
+    <div class="date_div">
+      <label for="birthday">出生日期：</label>
+      <input class="inputsize" type="date" id="birthday">
+      <span id="birthdayTips"></span><br>
+    </div>
+    <!-- 提交按钮 -->
+    <button onclick="userReg()">提交</button>
+  </div>
+  <footer>
+    <iframe src="bottom.html" frameborder="0" scrolling="no"></iframe>
+  </footer>
+</body>
+</html>

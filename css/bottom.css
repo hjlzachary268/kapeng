@@ -1,0 +1,67 @@
+*{
+  margin:0;
+  padding:0;
+}
+html{
+  height:100%;
+}
+body{
+  background-color:#191919;
+  text-align: center;
+  color:#fff;
+  height:20rem;
+  margin-top:3rem;
+}
+.logo{
+  width:7rem;
+}
+p{
+  padding:0.2rem;
+  line-height: 1.5rem;
+}
+hr{
+  border:0.03rem solid rgba(200,200,200,0.3);
+}
+a{
+  text-decoration:none;
+}
+.SNS{
+  height:5%;
+}
+.SNS a{
+  display: inline-block;
+  width:3rem;
+  height:3rem;
+  margin:0.5rem 0.5rem 0;
+}
+.weibo{
+  background-image:url(weibo.png);
+  background-size:2rem;
+  background-repeat:no-repeat;
+}
+.weixin{
+  background-image:url(weixin.png);
+  background-size:2rem;
+  background-repeat:no-repeat;
+}
+.ewm{
+  display:none;
+  position: absolute;
+  left:42%;
+  top:35%;
+}
+.ewm img{
+  width:30%;
+}
+.weixin:hover .ewm{
+  display:block;
+}
+.contect{
+  padding:2rem;
+}
+a:link{color:#fff;}
+a:visited{color:#fff;}
+a:hover{color:#999;}
+.ablue{color:#337ab7;}
+.ablue:visited{color:#337ab7;}
+.ablue:hover{color:#23527c;}

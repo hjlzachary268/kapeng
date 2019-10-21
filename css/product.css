@@ -1,0 +1,30 @@
+.banner{
+  height:700px;
+  background:url(product_bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.display{
+  width:80%; 
+  margin:2rem auto;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.display>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display>div>p{
+  display: inline-block;
+  font-size: 2.2rem;
+}
+.display>div>hr{
+  width:40%;
+  margin:0 1rem;
+}
+.display>div>hr{
+  height:2px;
+  outline:0;
+  border:0;
+  background:#ccc;
+}
