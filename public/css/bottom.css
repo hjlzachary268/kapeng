@@ -35,12 +35,12 @@ a{
   margin:0.5rem 0.5rem 0;
 }
 .weibo{
-  background-image:url(weibo.png);
+  background-image:url(../img/weibo.png);
   background-size:2rem;
   background-repeat:no-repeat;
 }
 .weixin{
-  background-image:url(weixin.png);
+  background-image:url(../img/weixin.png);
   background-size:2rem;
   background-repeat:no-repeat;
 }

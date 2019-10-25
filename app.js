@@ -9,10 +9,7 @@ var app=express();
 //监听接口8080
 app.listen(8080);
 //静态托管到文件夹html
-app.use(express.static('../html'));
-app.use(express.static('./'));
-app.use(express.static('../img'));
-app.use(express.static('../css'));
+app.use(express.static('public'));
 //使用body-parser中间件
 app.use(bodyParser.urlencoded({
   extended:false

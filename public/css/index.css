@@ -1,7 +1,7 @@
 .background{
   width:100%;
   height:700px;
-  background:url(img_1.jpg) no-repeat center center;
+  background:url(../img/img_1.jpg) no-repeat center center;
   background-size:cover;
 }
 .scrolling{
@@ -88,7 +88,7 @@ h1{
 }
 .dishes_banner{
   height:600px;
-  background:url(dishes_bg.jpg) no-repeat center;
+  background:url(../img/dishes_bg.jpg) no-repeat center;
   background-size:cover;
   position: relative;
   display:flex;
@@ -216,8 +216,8 @@ h1{
 .restaurant_show>ul>li>img{
   width:100%;
 }
-.food-show>ul>li>div,.food-show>ul>li>p{
-}
+/*.food-show>ul>li>div,.food-show>ul>li>p{
+}*/
 .restaurant_show>ul>li>div{
   width:100%;
   height:0%;
@@ -321,7 +321,7 @@ h1{
   color:#444;
 }
 .menu{
-  background: url(footer_bg.jpg) no-repeat center;
+  background: url(../img/footer_bg.jpg) no-repeat center;
   background-size:cover;
   padding:3rem 0 5rem;
   position: relative;
