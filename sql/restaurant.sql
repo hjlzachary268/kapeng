@@ -17,3 +17,9 @@ CREATE TABLE user(
     reward_points INT,
     ugrade INT
 )
+CREATE TABLE food(
+    fid INT PRIMARY KEY AUTO_INCREMENT,
+    category VARCHAR(8),
+    fname VARCHAR(32),
+    price INT,
+)

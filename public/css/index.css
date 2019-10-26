@@ -415,11 +415,16 @@ h1{
   margin:-1.9rem 0 0 -4rem; 
 
 }
-.menu>div>ul:last-child>li{
+/* .menu>div>ul:last-child>li{
   display:inline-flex;
   justify-content: space-between;
   font-size:1.3rem;
+} */
+.menu>div>ul:last-child>li>div{
+  display:flex;
+  justify-content: space-between;
+  font-size:1.3rem;
 }
-.menu>div>ul:last-child>hr{
+.menu>div>ul:last-child>li>hr{
   margin:1rem 0;
 }
