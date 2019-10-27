@@ -12,8 +12,8 @@ router.get('/menu/:cid',(reg,res)=>{
   var sql="SELECT fname,price FROM food WHERE cid=?";
   pool.query(sql,[$cid],(err,result)=>{
     if(err) throw err;
-    // console.log(result);
-    result.length>0 && res.send(result) || res.send({msg:"找不到对应的菜色哦!"});
+    console.log(result);
+    result.length>0 && res.send(result) || res.send({msg:"找不到对应的菜色!"});
   })
 })
 module.exports=router;

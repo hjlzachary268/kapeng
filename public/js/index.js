@@ -2,17 +2,19 @@
 //   console.log(result);
 // }
 // index.getMenu().then(menuHandler);
-var foods;
 var vm=new Vue({
   el:"#app",
   data:{
-    foods
+    foods:[]
   },
   methods: {
-    menuHandler(foods){
-      console.log(foods);
-      this.foods=foods;
+    menuHandler(result){
+      console.log(result);
+      this.foods=result;
+    },
+    getMenu(cid){
+      index.getFood(cid).then(this.menuHandler);
     }
   },
 })
-index.getMenu().then(vm.menuHandler);
+vm.getMenu(10);

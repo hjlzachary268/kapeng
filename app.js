@@ -12,7 +12,8 @@ const bodyParser=require('body-parser');
 var app=express();
 //使用跨域中间件
 app.use(cors({
-  origin:["localhost:5050","127.0.0.1:5050","localhost:5500","127.0.0.1:5500"]
+  origin:["http://localhost:5050","http://127.0.0.1:5050","http://localhost:5500","http://127.0.0.1:5500"],
+  credentials:true
 }))
 //监听接口5050
 app.listen(5050);

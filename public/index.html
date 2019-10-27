@@ -106,39 +106,40 @@
           <hr>
         </li>
         <li>
-          <a href="javascript:;">牛排系列</a>
+          <a href="javascript:;" @click="getMenu(10)">牛排系列</a>
           <hr>
         </li>
         <li>
-          <a href="javascript:;">沙拉系列</a>
+          <a href="javascript:;" @click="getMenu(20)">沙拉系列</a>
           <hr>
         </li>
         <li>
-          <a href="javascript:;">主食系列</a>
+          <a href="javascript:;" @click="getMenu(30)">主食系列</a>
           <hr>
         </li>
         <li>
-          <a href="javascript:;">小炒系列</a>
+          <a href="javascript:;" @click="getMenu(40)">小炒系列</a>
           <hr>
         </li>
         <li>
-          <a href="javascript:;">小食系列</a>
+          <a href="javascript:;" @click="getMenu(50)">小食系列</a>
           <hr>
         </li>
         <li>
-          <a href="javascript:;">饮品系列</a>
+          <a href="javascript:;" @click="getMenu(60)">饮品系列</a>
           <hr>
         </li>
         <li>
-          <a href="javascript:;">甜品系列</a>
+          <a href="javascript:;" @click="getMenu(70)">甜品系列</a>
           <hr>
         </li>
       </ul>
       <ul id="steak">
+        <!-- <li v-if="foods.msg"><div><span>{{foods.msg}}</span></div></li> -->
         <li v-for="(f,i) of foods" :key="i">
           <div>
-            <span>{{f.fname}}</span>
-            <span>¥{{f.price.toFixed(2)}}</span>
+            <span>{{f.fname || f}}</span>
+            <span>{{f.price?`¥${f.price.toFixed(2)}`:""}}</span>
           </div>
           <hr>
         </li>
